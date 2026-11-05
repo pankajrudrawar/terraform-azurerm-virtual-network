@@ -60,7 +60,7 @@ module "virtual_network" {
       address_prefixes = ["10.30.2.0/24"]
 
       delegation = {
-        service_name = "Microsoft.NetApp/volumes"
+        service_name = "Microsoft.Netapp/volumes"
         name         = "netapp"
         actions      = ["Microsoft.Network/networkinterfaces/*", "Microsoft.Network/virtualNetworks/subnets/join/action"]
       }
